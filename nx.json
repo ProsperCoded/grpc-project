@@ -19,5 +19,18 @@
         "serveStaticTargetName": "serve-static"
       }
     }
-  ]
+  ],
+  "targetDefaults": {
+    "build": {
+      "options": {
+        "assets": [
+          {
+            "glob": "*.proto",
+            "input": "proto",
+            "output": "proto"
+          }
+        ]
+      }
+    }
+  }
 }
