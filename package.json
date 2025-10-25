@@ -2,7 +2,9 @@
   "name": "@grpc-project/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx run-many --parallel --max-processes=2 --target api-gateway:serve --target products:serve --watch"
+  },
   "private": true,
   "dependencies": {
     "@grpc/grpc-js": "^1.14.0",
