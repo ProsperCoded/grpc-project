@@ -14,8 +14,9 @@ import { ProductController } from './product/product.controller';
         name: PRODUCTS_PACKAGE_NAME,
         transport: Transport.GRPC,
         options: {
+          url: '0.0.0.0:50051',
           package: PRODUCTS_PACKAGE_NAME,
-          protoPath: join(__dirname, '../../../proto/products.proto'),
+          protoPath: join(__dirname, 'proto/products.proto'),
         },
       },
     ]),
